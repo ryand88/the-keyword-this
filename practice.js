@@ -90,9 +90,8 @@ var getMyUsername = function() {
  return this.username;
 };
 
-var userName = getMyUsername.bind(myUser); //Fix this
-console.log(userName());
-
+var userName = getMyUsername.apply(myUser); //Fix this
+userName();
 //Above you're given an object, and  a function. What will the getMyUsername function return?
 //Note(no tests)
   //Answer Here undefined
