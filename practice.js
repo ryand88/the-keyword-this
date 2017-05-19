@@ -28,7 +28,7 @@
       username: "Ryan",
       email: "ryan@email.com",
       getUsername: function(){
-        return user.username;
+        return this.username;
       }
     }
 
